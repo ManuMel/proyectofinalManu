@@ -1,0 +1,21 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 619 441" width="619" height="441">
+	<title>logo-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-364-53h1280v720h-1280v-720z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.s0 { fill: #2e4c6d } 
+		.s1 { fill: #fc997c } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" class="s0" d="m53 53h226v227h-226v-227z" />
+			<path id="M" fill="#ffffff" aria-label="M"  d="m112.2 224v-111.54h22.49l28.46 75.9l28.61-75.9h22.49v111.54h-14.72v-97.94l-28.76 76.5h-15.17l-28.76-76.5v97.94h-14.64z" />
+			<path id="Layer" class="s1" d="m340 167h227v226h-227v-226z" />
+			<path id="M" fill="#ffffff" aria-label="M"  d="m400.05 337v-111.54h22.49l28.46 75.9l28.61-75.9h22.49v111.54h-14.72v-97.94l-28.76 76.5h-15.17l-28.76-76.5v97.94h-14.64z" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+html {
+  font-size: 62.5%; }
+
+.colorBase {
+  color: #44546a; }
+
+.colorSecundario {
+  color: #fc997c; }
+
+.colorExcel {
+  color: #55cb60; }
+
+.colorAutomate {
+  color: #5b9bd5; }
+
+.colorApps {
+  color: #cd57b1; }
+
+.bgColorBase {
+  background-color: #44546a; }
+
+.bgExcel {
+  background-color: #55cb60;
+  color: white; }
+
+.bgExcel:hover {
+  background-color: white;
+  color: #55cb60;
+  font-weight: 700;
+  border: solid;
+  border-color: #55cb60;
+  border-width: 1px; }
+
+.bgGradientExcel {
+  background: #29702d;
+  background: -webkit-linear-gradient(top, #29702d, #a6dd89);
+  background: -moz-linear-gradient(top, #29702d, #a6dd89);
+  background: linear-gradient(to bottom, #29702d, #a6dd89); }
+
+.bgAutomate {
+  background-color: #5b9bd5;
+  color: white; }
+
+.bgAutomate:hover {
+  background-color: white;
+  color: #5b9bd5;
+  font-weight: 700;
+  border: solid;
+  border-color: #5b9bd5;
+  border-width: 1px; }
+
+.bgGradientAutomate {
+  background: #355878;
+  background: -webkit-linear-gradient(top, #355878, #899fdd);
+  background: -moz-linear-gradient(top, #355878, #899fdd);
+  background: linear-gradient(to bottom, #355878, #899fdd); }
+
+.bgApps {
+  background-color: #cd57b1;
+  color: white; }
+
+.bgApps:hover {
+  background-color: white;
+  color: #cd57b1;
+  font-weight: 700;
+  border: solid;
+  border-color: #cd57b1;
+  border-width: 1px; }
+
+.bgGradientApps {
+  background: #723578;
+  background: -webkit-linear-gradient(top, #723578, #ce89dd);
+  background: -moz-linear-gradient(top, #723578, #ce89dd);
+  background: linear-gradient(to bottom, #723578, #ce89dd); }
+
+@keyframes animCards {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.animationCards {
+  animation-name: animCards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.5s;
+  animation-iteration-count: normal; }
+
+@keyframes divAnimacion {
+  0% {
+    width: 20%;
+    background-color: #cd57b1; }
+  25% {
+    width: 40%;
+    background-color: white; }
+  50% {
+    width: 60%;
+    background-color: #5b9bd5; }
+  75% {
+    width: 80%;
+    background-color: white; }
+  100% {
+    width: 100%;
+    background-color: #55cb60; } }
+
+.divAnimacion {
+  align-self: center;
+  height: 1.5px;
+  animation-name: divAnimacion;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  margin: 10px 0 50px 0; }
+
+@keyframes textoUno {
+  0% {
+    color: #cd57b1; }
+  50% {
+    color: #5b9bd5; }
+  100% {
+    color: #55cb60; } }
+
+.textoAnimacion {
+  animation-name: textoUno;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  font-weight: 900; }
+
+.fontWeigthThin {
+  font-weight: 100; }
+
+.fontWeigthSemithin {
+  font-weight: 300; }
+
+.fontWeigthSemibold {
+  font-weight: 500; }
+
+.fontWeigthBold {
+  font-weight: 700; }
+
+.containerIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav nav nav" "header header header" "sectionUno sectionUno sectionUno" "sectionDos sectionDos sectionDos" "sectionTres sectionTres sectionTres" "footer footer footer";
+  width: 100%;
+  box-sizing: border-box; }
+
+.navGrid {
+  grid-area: nav; }
+
+.headerGrid {
+  grid-area: header;
+  text-align: center; }
+
+.headerGrid h1 {
+  margin: 30px 0 5px 0;
+  font-size: 2rem; }
+
+.headerGrid div h2 {
+  font-size: 0.8rem; }
+
+.headerGrid div p {
+  font-size: 0.7rem; }
+
+.sectionUnoGrid {
+  grid-area: sectionUno;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+
+.sectionUnoGrid h3 {
+  margin: 30px 0 20px 0;
+  font-size: 2rem; }
+
+.sectionUnoGrid p {
+  margin: 20px 10px 20px 10px;
+  font-size: 1.5rem; }
+
+.sectionDosGrid {
+  grid-area: sectionDos;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sectionTresGrid {
+  grid-area: sectionTres;
+  font-size: 1.5rem; }
+
+.sectionTresGrid h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0 10px 0; }
+
+.sectionTresGrid button {
+  font-size: 1.5rem; }
+
+.footerGrid {
+  grid-area: footer; }
+
+.tarjeta {
+  width: 75%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 0 40px 0; }
+
+.tarjeta h5 {
+  font-size: 2.5rem; }
+
+.tarjeta a {
+  font-size: 1.5rem;
+  margin: 10px 0 10px 0; }
+
+.for {
+  margin: 30px;
+  font-size: 5rem; }
+
+@media only screen and (min-width: 768px) {
+  .headerGrid h1 {
+    margin: 30px 0 20px 0;
+    font-size: 3rem; }
+  .headerGrid div h2 {
+    font-size: 2rem; }
+  .headerGrid div p {
+    font-size: 1.5rem; }
+  .sectionUnoGrid h3 {
+    margin: 40px 0 20px 0;
+    font-size: 3rem; }
+  .sectionUnoGrid p {
+    margin: 20px 30px 30px 30px;
+    font-size: 2rem; }
+  .sectionDosGrid {
+    grid-area: sectionDos;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .sectionTresGrid {
+    grid-area: sectionTres;
+    font-size: 2rem;
+    margin-top: 20px; }
+  .sectionTresGrid h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px 0 10px 0; }
+  .sectionTresGrid button {
+    font-size: 2rem; }
+  .footer h5 {
+    font-size: 1.5rem; }
+  .footer p {
+    font-size: 1rem; }
+  .footer a {
+    font-size: 1rem; }
+  .tarjeta {
+    width: 300px;
+    text-align: center;
+    margin: 0 0 20px 0; }
+  .tarjeta div {
+    height: 320px; }
+  .tarjeta h5 {
+    font-size: 3rem;
+    height: 40px; }
+  .tarjeta p {
+    font-size: 2rem;
+    height: 180px; }
+  .tarjeta a {
+    font-size: 2rem;
+    height: auto;
+    margin: 10px 0 10px 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .headerGrid h1 {
+    margin: 30px 0 40px 0;
+    font-size: 4rem; }
+  .headerGrid div h2 {
+    font-size: 3.5rem; }
+  .headerGrid div p {
+    font-size: 3rem; }
+  .sectionUnoGrid h3 {
+    margin: 50px 0 40px 0;
+    font-size: 3rem; }
+  .sectionUnoGrid p {
+    margin: 20px 80px 20px 80px;
+    font-size: 2rem; }
+  .sectionDosGrid {
+    grid-area: sectionDos;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .sectionTresGrid {
+    grid-area: sectionTres;
+    font-size: 2.5rem;
+    margin: 50px 300px 0 300px; }
+  .sectionTresGrid h4 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0 10px 0; }
+  .sectionTresGrid button {
+    font-size: 2.5rem; }
+  .footer h5 {
+    font-size: 2rem; }
+  .footer p {
+    font-size: 1.5rem; }
+  .footer a {
+    font-size: 1.5rem; }
+  .tarjeta {
+    width: 390px;
+    text-align: center;
+    margin-bottom: 40px; }
+  .tarjeta div {
+    height: 360px; }
+  .tarjeta h5 {
+    font-size: 2.5rem;
+    height: 40px; }
+  .tarjeta p {
+    font-size: 2rem;
+    height: 200px; }
+  .tarjeta a {
+    font-size: 2rem;
+    height: auto; } }
+
+/* ESTILOS DE EXCEL */
+.containerExcel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav nav nav" "headerExl headerExl headerExl" "sectionUnoExl sectionUnoExl sectionUnoExl" "sectionDosExl sectionDosExl sectionDosExl" "footer footer footer";
+  width: 100%;
+  box-sizing: border-box; }
+
+.headerExl {
+  grid-area: headerExl;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center; }
+
+.headerExl h1 {
+  font-size: 3rem;
+  margin: 20px; }
+
+.sectionUnoExl {
+  grid-area: sectionUnoExl; }
+
+.sectionUnoExl p {
+  font-size: 1.6rem;
+  margin: 20px; }
+
+.sectionDosExl {
+  grid-area: sectionDosExl; }
+
+.sectionDosExl h3 {
+  font-size: 2rem;
+  margin: 20px; }
+
+.tarjetaDos {
+  margin: 30px;
+  font-size: 2rem; }
+
+.tarjetaDos h5 {
+  font-size: 2rem;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid; }
+
+.formulario {
+  font-size: 1rem;
+  padding: 5px 50px 0 50px; }
+
+.formulario h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5%; }
+
+.formulario a {
+  font-size: 1rem; }
+
+.formulario input {
+  font-size: 1rem; }
+
+.formulario label {
+  margin-right: 20px; }
+
+@media only screen and (min-width: 768px) {
+  .headerExl h1 {
+    font-size: 4rem;
+    margin: 30px; }
+  .sectionUnoExl p {
+    font-size: 2rem;
+    margin: 25px; }
+  .sectionDosExl {
+    grid-area: sectionDosExl;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .sectionDosExl h3 {
+    font-size: 3rem;
+    text-align: center; }
+  .tarjetaDos {
+    margin: 10px; }
+  .formulario {
+    font-size: 1.5rem;
+    padding: 5px 50px 0 100px; }
+  .formulario h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5%; }
+  .formulario a {
+    font-size: 1.5rem; }
+  .formulario input {
+    font-size: 1.5rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .headerExl h1 {
+    font-size: 5rem;
+    margin: 50px; }
+  .sectionDosExl {
+    grid-area: sectionDosExl;
+    margin-left: 50px;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .sectionDosExl h3 {
+    text-align: center; }
+  .formulario {
+    font-size: 2rem;
+    padding: 50px 400px 0 400px; }
+  .formulario h3 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 5%; }
+  .formulario a {
+    font-size: 2rem; }
+  .formulario input {
+    font-size: 2rem; } }
+
+.bgNav {
+  font-size: 1.5rem; }
+
+.styleNav ul li a {
+  margin-right: 40px;
+  border-bottom-style: solid;
+  border-bottom-color: #44546a; }
+
+.styleNav ul li a:hover {
+  border-bottom-style: solid;
+  border-bottom-color: #fc997c; }
+
+.footer {
+  color: white; }
+
+.footer .links ul {
+  list-style-type: none; }
+
+.footer .links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s; }
+
+.footer .links li a:hover {
+  color: #fc997c; }
+
+.footer .redes i {
+  font-size: 20px;
+  margin: 5px; }
+
+.footer .redes a {
+  color: white;
+  transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s; }
+
+.footer .redes a:hover {
+  color: #fc997c; }
+
+.footer .direccion i {
+  font-size: 20px;
+  margin-right: 15px; }
+
+.footer .legal p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
